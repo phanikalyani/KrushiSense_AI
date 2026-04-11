@@ -1,5 +1,7 @@
 const express = require("express");
 const multer = require("multer");
+
+// FIXED PATH ✅
 const { detectCrop } = require("./controllers/cropController");
 
 const router = express.Router();

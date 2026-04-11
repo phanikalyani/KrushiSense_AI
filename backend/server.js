@@ -16,9 +16,9 @@ app.use(express.json());
 connectDB();
 
 // Routes
-app.use("/api", cropRoutes);
-app.use("/api", yieldRoutes);
-app.use("/api", healthRoutes);
+app.use("/api", croproutes);
+app.use("/api", yieldroutes);
+app.use("/api", healthroutes);
 
 // Test
 app.get("/", (req, res) => {

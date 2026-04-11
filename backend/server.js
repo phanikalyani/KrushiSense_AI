@@ -3,9 +3,9 @@ const cors = require("cors");
 
 const connectDB = require("./db");
 
-const cropRoutes = require("./routes/croproutes");
-const yieldRoutes = require("./routes/yieldroutes");
-const healthRoutes = require("./routes/healthroutes");
+const cropRoutes = require("./routes/cropRoutes");
+const yieldRoutes = require("./routes/yieldRoutes");
+const healthRoutes = require("./routes/healthRoutes");
 
 const app = express();
 
@@ -16,9 +16,9 @@ app.use(express.json());
 connectDB();
 
 // Routes
-app.use("/api", cropRoutes);
-app.use("/api", yieldRoutes);
-app.use("/api", healthRoutes);
+app.use("/api", croproutes);
+app.use("/api", yieldroutes);
+app.use("/api", healthroutes);
 
 // Test
 app.get("/", (req, res) => {

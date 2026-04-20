@@ -4,6 +4,7 @@ import { FaLeaf, FaHeartbeat, FaChartBar, FaHistory } from "react-icons/fa";
 import "./App.css";
 
 const API_BASE = "http://localhost:5001";
+const API_BASE = "https://krushisense-ai.onrender.com";
 
 export default function App() {
   const [file, setFile] = useState(null);

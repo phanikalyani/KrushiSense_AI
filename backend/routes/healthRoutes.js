@@ -1,5 +1,5 @@
 const express = require("express");
-const { checkHealth } = require("../controllers/healthController");
+const { checkHealth } = require("../Controllers/healthController");
 
 const router = express.Router();
 

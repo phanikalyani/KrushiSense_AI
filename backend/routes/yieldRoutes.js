@@ -1,5 +1,5 @@
 const express = require("express");
-const { predictYield } = require("../controllers/yieldController");
+const { predictYield } = require("../Controllers/yieldController");
 
 const router = express.Router();
 
